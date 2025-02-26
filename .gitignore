@@ -1,2 +1,3 @@
-# Terraform Providers
-.terraform
+# Ignore Terraform directories
+.terraform/
+
