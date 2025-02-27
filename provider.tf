@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  cloud {
+ backend "remote" {
     organization = "cloud-talents"
 
     workspaces {
