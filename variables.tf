@@ -21,3 +21,14 @@ variable "private_subnets" {
   type        = list(string)
   default     = ["10.10.10.0/24", "10.10.20.0/24"]
 }
+
+variable "ram_name" {
+  description = "Name of the RAM resource share"
+  type        = string
+  default     = "SharedSubnets"
+}
+
+variable "ou_arn" {
+  description = "ARN of the Sandbox OU in AWS Organizations"
+  type        = string
+}
