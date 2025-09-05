@@ -1,4 +1,4 @@
-# 🛡From Isolation to Connectivity: AWS VPC & RAM Resource Sharing
+# From Isolation to Connectivity: AWS VPC & RAM Resource Sharing
 
 Welcome to the repository for my AWS multi-account networking project — implementing **VPC segmentation** and **secure cross-account sharing** using **AWS RAM**, **Terraform**, and **GitHub Actions**.
 
@@ -122,7 +122,7 @@ jobs:
 - Automated Terraform plan + apply with validation
 - Integrated with AWS via OIDC (no static keys)
 
-### 🔹 Phase 4: Cross-Account Sharing with AWS RAM
+### Phase 4: Cross-Account Sharing with AWS RAM
 - Enabled RAM Org sharing
 - Shared all subnets with **Sandbox OU** via `ram.tf`
 - Verified subnet access in **Development Account**
