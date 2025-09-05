@@ -1,4 +1,4 @@
-# 🛡️ From Isolation to Connectivity: AWS VPC & RAM Resource Sharing
+# 🛡From Isolation to Connectivity: AWS VPC & RAM Resource Sharing
 
 Welcome to the repository for my AWS multi-account networking project — implementing **VPC segmentation** and **secure cross-account sharing** using **AWS RAM**, **Terraform**, and **GitHub Actions**.
 
@@ -6,7 +6,7 @@ Welcome to the repository for my AWS multi-account networking project — implem
 
 ---
 
-## 📸 Architecture Overview
+## Architecture Overview
 
 <img width="876" height="594" alt="image" src="https://github.com/user-attachments/assets/892470a9-3a23-4553-8022-2863305c239b" />
 
@@ -23,7 +23,7 @@ Welcome to the repository for my AWS multi-account networking project — implem
 
 ---
 
-## ✨ Features
+## Features
 
 ✅ Multi-account architecture via AWS Control Tower  
 ✅ Centralized VPC managed in a dedicated Network account  
@@ -35,7 +35,7 @@ Welcome to the repository for my AWS multi-account networking project — implem
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | Category       | Tools/Services                         |
 |----------------|----------------------------------------|
@@ -47,7 +47,7 @@ Welcome to the repository for my AWS multi-account networking project — implem
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 🖥️ Prerequisites
 - AWS Control Tower enabled with Organizations
@@ -67,7 +67,7 @@ network/
 
 ---
 
-## ⚙️ GitHub Actions Workflow
+## GitHub Actions Workflow
 
 CI/CD is fully automated with OIDC authentication to assume IAM roles.
 
@@ -104,9 +104,9 @@ jobs:
 
 ---
 
-## 🧱 Step-by-Step Implementation
+## Step-by-Step Implementation
 
-### 🔹 Phase 1: Centralized VPC Creation
+### Phase 1: Centralized VPC Creation
 - Deployed VPC in **Network Account** with:
   - 2 Private Subnets (A & B)
   - 2 Public Subnets (A & B)
@@ -114,11 +114,11 @@ jobs:
 - Disabled default VPCs via Account Factory
 - CIDR blocks planned for scalability
 
-### 🔹 Phase 2: Infrastructure-as-Code with Terraform
+### Phase 2: Infrastructure-as-Code with Terraform
 - Stored IaC in GitHub for version control
 - Built reusable modules for VPC, subnets, and RAM
 
-### 🔹 Phase 3: CI/CD with GitHub Actions
+### Phase 3: CI/CD with GitHub Actions
 - Automated Terraform plan + apply with validation
 - Integrated with AWS via OIDC (no static keys)
 
@@ -130,7 +130,7 @@ jobs:
 
 ---
 
-## 🔐 Security Highlights
+## Security Highlights
 
 - **Private Subnets** isolate sensitive workloads (e.g., RDS)
 - **NAT Gateway** allows secure internet access without exposure
@@ -140,7 +140,7 @@ jobs:
 
 ---
 
-## 📚 Related Blog Post
+## Related Blog Post
 
 This implementation is fully documented in the Medium blog post:
 
@@ -148,6 +148,6 @@ This implementation is fully documented in the Medium blog post:
 
 ---
 
-## 📜 License
+## License
 
 MIT © Bhavika Mantri — free to use, fork, and build upon.
